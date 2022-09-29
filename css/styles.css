@@ -1,0 +1,40 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300&display=swap');
+
+/* Al definir el 60% para el font-size, estandarizamos y luego usamos rem, 3 rem serán 30px */
+html {
+    box-sizing: border-box; 
+    font-size: 60.0%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    margin: 0;
+	padding: 0;
+}
+/* Variables en la raíz para futuros usos, colores a modificar de acuerdo al gusto*/
+/* Manera de usar variables  */
+/* background: var(--color-pri); */
+/* font-size: var(--font-family); */
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    
+    --color-pri: #358dda;
+    --color-pri-tinte: #2048ab;
+    --color-pri-claro: #12a9db;
+
+    --color-aluminium-claro: #eeeeec;
+    --color-aluminium-medium: #ded7cf;
+    --color-aluminium-oscuro: #babdb6;
+
+    --font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: var(--color-pri);
+}
+/* Ejemplo de uso */
+.titlePrincipal{
+    color: var(--color-black);
+    font-family: var(--font-family);
+    font-size: 4rem;
+}
