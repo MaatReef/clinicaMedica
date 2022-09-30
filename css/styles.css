@@ -1,11 +1,11 @@
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300&display=swap');
 
-/* Al definir el 60% para el font-size, estandarizamos y luego usamos rem, 3 rem serán 30px */
+/* Al definir el 60% para el font-size, estandarizamos y luego usamos rem, 3 rem serán 30px
 html {
     box-sizing: border-box; 
-    font-size: 60.0%; /* 1REM = 10px */
-}
+    font-size: 60.0%; /* 1REM = 10px 
+*/
 *, *:before, *:after {
     margin: 0;
 	padding: 0;
@@ -15,26 +15,30 @@ html {
 /* background: var(--color-pri); */
 /* font-size: var(--font-family); */
 :root{
-    --color-black: #000;
-    --color-white: #fff;
+    --col-black: #000;
+    --col-white: #fff;
     
-    --color-pri: #358dda;
-    --color-pri-tinte: #2048ab;
-    --color-pri-claro: #12a9db;
+    --col-pri: #358dda;
+    --col-pri-dye: #2048ab;
+    --col-pri-light: #12a9db;
 
-    --color-aluminium-claro: #eeeeec;
-    --color-aluminium-medium: #ded7cf;
-    --color-aluminium-oscuro: #babdb6;
+    --col-aluminium-light: #eeeeec;
+    --col-aluminium-medium: #ded7cf;
+    --col-aluminium-dye: #babdb6;
 
     --font-family: 'Ubuntu', sans-serif;
 }
 
 body{
-    background-color: var(--color-pri);
+    background-color: var(--col-aluminium-light);
 }
 /* Ejemplo de uso */
 .titlePrincipal{
-    color: var(--color-black);
+    color: var(--col-black);
     font-family: var(--font-family);
     font-size: 4rem;
+}
+
+.red{
+    background-color: red;
 }
