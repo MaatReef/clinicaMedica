@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "OSECAC",
+        "plan": "Standard"
+    },
+    {
+        "id": 2,
+        "name": "IOMA",
+        "plan": "Standard"
+    },
+    {
+        "id": 3,
+        "name": "OSECAC",
+        "plan": "Premium"
+    },
+    {
+        "id": 4,
+        "name": "OSDE",
+        "plan": "110"
+    },
+    {
+        "id": 5,
+        "name": "OSDE",
+        "plan": "210"
+    },
+    {
+        "id": 6,
+        "name": "OSDE",
+        "plan": "310"
+    },
+    {
+        "id": 7,
+        "name": "OSDE",
+        "plan": "410"
+    },
+    {
+        "id": 8,
+        "name": "Swiss medical",
+        "plan": "Standard"
+    },
+    {
+        "id": 9,
+        "name": "Swiss medical",
+        "plan": "Premium"
+    },
+    {
+        "id": 10,
+        "name": "OSDEPym",
+        "plan": "Standard"
+    }
+]
