@@ -1,7 +1,10 @@
 # Trabajo Práctico Final - Integrador
 
+## [Diplomatura en Desarrollo de Software WEB](https://www.cudi.ar/oferta-academica/area-diplomaturas/desarrollo-de-software/)
+
 <!-- Front Matter -->
 Integrantes: Daniela - Matias
+Tutor: Mariano Mendez
 
 ---
 
@@ -11,3 +14,7 @@ Guía propuesta por el corrector:
 - 2º - Abm (CRUD) de doctores : nombre, foto, especialidad, horario de atencion.
 - 3º - Armar en el sitio web un html que sea Staff y muestre todos los doctores.
 - 4º - Formulario de turnos: doctor y horario.
+
+Boceto
+
+![Home](./assets/sketch.png)
