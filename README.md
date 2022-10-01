@@ -10,12 +10,22 @@ Tutor: Mariano Mendez
 ---
 
 <!-- Body -->
-Guía propuesta por el corrector:
-- 1º - Web con lo estatico (Footer, header, navbar, Frames(google maps)) / Frontend - El sitio web tendrá 2 paginas, la visible y la administrativa.  (Unidas ambas en la propia interacción).
-- 2º - Abm (CRUD) de doctores : nombre, foto, especialidad, horario de atencion.
-- 3º - Armar en el sitio web un html que sea Staff y muestre todos los doctores.
-- 4º - Formulario de turnos: doctor y horario.
+### Guía propuesta por el corrector:
 
-Boceto
+1. Web con lo estatico (Footer, header, navbar, Frames(google maps)) / Frontend - El sitio web tendrá 2 páginas, la visible y la administrativa (unidas ambas en la propia interacción).
+
+2. ABM (CRUD) de doctores: nombre, foto, especialidad, horario de atención. ABM (CRUD) de usuarios: datos personales, turnos, estudios.
+
+3. Armar en el sitio web un html que sea Staff y muestre todos los doctores.
+
+4. Formulario de contacto / registración de usuarios / pedido de turnos: doctor y horario.
+
+### Datos fake
+
+Abrir terminal en la raíz del directorio y ejecutar:
+
+> python3 -m http.server
+
+### Boceto
 
 ![Home](./assets/sketch.png)

@@ -30,9 +30,23 @@ html {
 }
 
 body{
-    background-color: var(--col-aluminium-light);
+    background-color: var(--col-white);
+    box-sizing: border-box;
+    margin: 0;
 }
-/* Ejemplo de uso */
+
+ul{
+    padding: 0;
+}
+
+.img-table-doctor{
+    max-width: 50px;
+}
+
+.img-table-user{
+    max-width: 30px;
+}
+
 .titlePrincipal{
     color: var(--col-black);
     font-family: var(--font-family);

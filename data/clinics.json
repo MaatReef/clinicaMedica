@@ -11,7 +11,7 @@
         },
         "phone": "1-770-736-8031",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     },
@@ -27,7 +27,7 @@
         },
         "phone": "010-692-6593",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     },
@@ -43,7 +43,7 @@
         },
         "phone": "1-463-123-4447",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     },
@@ -59,7 +59,7 @@
         },
         "phone": "493-170-9623",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     },
@@ -75,7 +75,7 @@
         },
         "phone": "(254)954-1289",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     },
@@ -91,7 +91,7 @@
         },
         "phone": "1-477-935-8478",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     },
@@ -107,7 +107,7 @@
         },
         "phone": "210.067.6132",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     },
@@ -123,7 +123,7 @@
         },
         "phone": "586.493.6943",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     },
@@ -139,7 +139,7 @@
         },
         "phone": "(775)976-6794",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     },
@@ -155,7 +155,7 @@
         },
         "phone": "024-648-3804",
         "health-coverage": [],
-        "schedule-attention": "L a V de 8:00 hs a 21:00 hs",
+        "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
         "photo": null
     }
