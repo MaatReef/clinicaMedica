@@ -93,6 +93,14 @@ ul{
     transform: scale(1.2);
 }
 
+#sidebarMenu {
+    height: 100vh;
+}
+
+.links {
+    text-decoration: none;
+}
+
 @media (max-width: 1440px) {
 
     .slider-caption {
