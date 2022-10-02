@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Clinic 1",
+        "name": "Más Salud",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Kulas Light",
@@ -13,11 +13,11 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-57.94942885637284%2C-34.919380299309665%2C-57.946918308734894%2C-34.91803651628651&amp;layer=mapnik"
     },
     {
         "id": 2,
-        "name": "Clinic 2",
+        "name": "Central Ambulatoria",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Victor Plains",
@@ -29,11 +29,11 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-57.94942885637284%2C-34.919380299309665%2C-57.946918308734894%2C-34.91803651628651&amp;layer=mapnik"
     },
     {
         "id": 3,
-        "name": "Clinic 3",
+        "name": "Corpus Hippocraticum",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Douglas Extension",
@@ -45,11 +45,11 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-68.14353168010713%2C-16.508104687743106%2C-68.14308106899263%2C-16.506538548283434&amp;layer=mapnik&amp;marker=-16.507321619599107%2C-68.14330637454987"
     },
     {
         "id": 4,
-        "name": "Clinic 4",
+        "name": "Salud Óptima",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Hoeger Mall",
@@ -61,11 +61,11 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-58.427127599716194%2C-34.58395203942527%2C-58.425325155258186%2C-34.57857256760139&amp;layer=mapnik&amp;marker=-34.58126234703642%2C-58.42622637748718"
     },
     {
         "id": 5,
-        "name": "Clinic 5",
+        "name": "Cuidando Futuro",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Skiles Walks",
@@ -77,11 +77,11 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-58.445463180542%2C-34.60343535547256%2C-58.441858291625984%2C-34.5926785863703&amp;layer=mapnik&amp;marker=-34.59805714505263%2C-58.443660736083984"
     },
     {
         "id": 6,
-        "name": "Clinic 6",
+        "name": "Armonía",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Norberto Crossing",
@@ -93,11 +93,11 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-57.94942885637284%2C-34.919380299309665%2C-57.946918308734894%2C-34.91803651628651&amp;layer=mapnik"
     },
     {
         "id": 7,
-        "name": "Clinic 7",
+        "name": "Activa Salud",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Rex Trail",
@@ -109,11 +109,11 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-57.94942885637284%2C-34.919380299309665%2C-57.946918308734894%2C-34.91803651628651&amp;layer=mapnik"
     },
     {
         "id": 8,
-        "name": "Clinic 8",
+        "name": "Plena Salud",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Ellsworth Summit",
@@ -125,11 +125,11 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-68.14353168010713%2C-16.508104687743106%2C-68.14308106899263%2C-16.506538548283434&amp;layer=mapnik&amp;marker=-16.507321619599107%2C-68.14330637454987"
     },
     {
         "id": 9,
-        "name": "Clinic 9",
+        "name": "Centro de Rayos",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Dayna Park",
@@ -141,11 +141,11 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-58.427127599716194%2C-34.58395203942527%2C-58.425325155258186%2C-34.57857256760139&amp;layer=mapnik&amp;marker=-34.58126234703642%2C-58.42622637748718"
     },
     {
         "id": 10,
-        "name": "Clinic 10",
+        "name": "Eleva tu salud",
         "email": "clinic@clinic.biz",
         "address": {
             "street": "Kattie Turnpike",
@@ -157,6 +157,6 @@
         "health-coverage": [],
         "scheduleAttention": "L a V de 8:00 hs a 21:00 hs",
         "active": true,
-        "photo": null
+        "photo": "https://www.openstreetmap.org/export/embed.html?bbox=-58.445463180542%2C-34.60343535547256%2C-58.441858291625984%2C-34.5926785863703&amp;layer=mapnik&amp;marker=-34.59805714505263%2C-58.443660736083984"
     }
 ]
