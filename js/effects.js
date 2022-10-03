@@ -1,8 +1,9 @@
+// Funcion para manejar la transición del carousel
 window.addEventListener("load", () => {
   const carrusel = document.querySelector(".carrusel-items");
 
-  console.log(carrusel.scrollWidth);
-  console.log(carrusel.clientWidth);
+  // console.log(carrusel.scrollWidth);
+  // console.log(carrusel.clientWidth);
 
   let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
   let intervalo = null;
@@ -35,6 +36,8 @@ window.addEventListener("load", () => {
   }, 1500);
 });
 
+
+// Control del deslizamiento del navbar al escrollear hacia arriba.
 var lastScrollTop = 0;
 
 window.addEventListener("scroll", function(){  
@@ -46,3 +49,30 @@ window.addEventListener("scroll", function(){
    }
    lastScrollTop = st;
 }, false);
+
+// Manejo de mensajes con SweetAlert, capturamos el botón, escuchamos el evento click y ejecutamos lo deseado.
+let btn_send = document.getElementById("send_message");
+
+
+btn_send.addEventListener("click", function(){  
+  // Validación sencilla
+  let name_send = document.getElementById("name_message").value;
+  let email_send = document.getElementById("mail_message").value;
+  let text_send = document.getElementById("text_message").value;
+
+  if(name_send && email_send && text_send){
+    swal({
+      title: "Correcto",
+      text: "Mensaje enviado correctamente",
+      icon: "success",
+      button: "Excelente",
+    });
+  } else{
+    swal({
+      title: "Error",
+      text: "Completa todos los campos",
+      icon: "error",
+      button: "Correcto",
+    });
+  }
+});

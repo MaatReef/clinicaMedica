@@ -18,7 +18,7 @@
     <header class="navbar navbar-expand-lg navbar-white bg-white border-bottom" id="topmenu"> 
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
             <ul>
-                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav fs-3 fw-bold">CLINICAS X</li>
+                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav fs-3 fw-bold"><a class="links" href="index.html">CLINICAS X</a></li>
                 <li class="navbar-nav flex-row flex-wrap bd-navbar-nav">Su salud, primero</li>
             </ul>
           <div class="d-flex">
@@ -189,6 +189,25 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div> <!--close Google Maps-->
 
+    <h2 class="text-center mt-5 mb-2">CONTACTO</h2>
+    <div class="container mb-4"> <!-- open form -->
+        <div class="mb-3"> 
+            <label for="exampleFormControlInput1" class="form-label">Ingresa tu Nombre:</label>
+            <input type="email" class="form-control" placeholder="Kurtis Weissnat"  id="name_message">
+        </div>
+        <div class="mb-3"> 
+            <label for="exampleFormControlInput1" class="form-label">Correo Electrónico:</label>
+            <input type="email" class="form-control" placeholder="nombre@ejemplo.com" id="mail_message">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Describe tu Inquietud:</label>
+            <textarea class="form-control" rows="3"  id="text_message"></textarea>
+        </div> 
+        <div class="mb-3 text-center">
+            <button type="button" class="btn btn-primary btn-lg rounded-0 fw-bold fs-6" id="send_message">ENVIAR CONSULTA</button>
+        </div> 
+    </div><!-- close form -->
+
     <footer class="py-3 m-auto container"> <!-- open footer -->
         <div class="row mb-3 text-center">
             <div class="col-6 themed-grid-col">
@@ -218,7 +237,7 @@
             <table class="table table-borderless">
                 <thead>
                   <tr>
-                    <th scope="col" class="border-bottom border-primary">CLINICAS X</th>
+                    <th scope="col" class="border-bottom border-primary"><a class="links" href="index.html">CLINICAS X</a></th>
                   </tr>
                 </thead>
             </table>
@@ -305,6 +324,8 @@
         });
     </script>
 
+    <!-- js sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Js Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
     <script src="js/bootstrap.bundle.min.js"></script> 
