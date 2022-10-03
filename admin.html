@@ -116,6 +116,57 @@
                     <tbody class="table-group-divider">
                     </tbody>
                 </table>
+
+                <!-- Open Modal Add doctor -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_Doctor">Agregar Doctor</button>
+
+                <div class="modal fade" id="add_Doctor" tabindex="-1" aria-labelledby="add_doctorLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="add_doctorLabel">Agregar Doctor:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="formFile" class="col-form-label">Foto:</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="name-doctor" class="col-form-label">Nombre y Apellido (Requerido):</label>
+                                <textarea class="form-control" id="name-doctor"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="specialty-doctor" class="col-form-label">Especialidad:</label>
+                                <textarea class="form-control" id="specialty-doctor"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email-doctor" class="col-form-label">Email:</label>
+                                <textarea class="form-control" id="email-doctor"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="campus-doctor" class="col-form-label">Sede:</label>
+                                <textarea class="form-control" id="campus-doctor"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="horary-doctor" class="col-form-label">Horario de atención:</label>
+                                <textarea class="form-control" id="horary-doctor"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="state-doctor" class="col-form-label">Estado:</label>
+                                <textarea class="form-control" id="state-doctor"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="add_doctorForm">Agregar Doctor</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Close Modal Add doctor -->
             </div>
             <div class="tab-pane fade py-3" id="users-tab-pane" role="tabpanel" aria-labelledby="users-tab" tabindex="0">
                 <table id="table-users" class="table align-middle table-hover">
@@ -134,6 +185,57 @@
                     <tbody class="table-group-divider">
                     </tbody>
                 </table>
+                
+                <!-- Open Modal Add Patient -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_patient">Agregar Paciente</button>
+
+                <div class="modal fade" id="add_patient" tabindex="-1" aria-labelledby="add_patientLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="add_patientLabel">Agregar Paciente:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="formFile" class="col-form-label">Foto:</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="name-patient" class="col-form-label">Nombre y Apellido (Requerido):</label>
+                                <textarea class="form-control" id="name-patient"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="socialWork-patient" class="col-form-label">Obra social:</label>
+                                <textarea class="form-control" id="socialWork-patient"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email-patient" class="col-form-label">Email:</label>
+                                <textarea class="form-control" id="email-patient"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone-patient" class="col-form-label">Teléfono:</label>
+                                <textarea class="form-control" id="phone-patient"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="adress-patient" class="col-form-label">Domicilio:</label>
+                                <textarea class="form-control" id="adress-patient"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="state-patient" class="col-form-label">Estado:</label>
+                                <textarea class="form-control" id="state-patient"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="add_patientForm">Agregar Paciente</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Close Modal Add Pacient -->
             </div>
             <div class="tab-pane fade py-3" id="health-tab-pane" role="tabpanel" aria-labelledby="health-tab" tabindex="0">
                 <table id="table-health" class="table align-middle table-hover">
@@ -148,6 +250,40 @@
                     <tbody class="table-group-divider">
                     </tbody>
                 </table>
+                <!-- Open Modal Add social work -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_socialWork">Agregar Obra Social</button>
+
+                <div class="modal fade" id="add_socialWork" tabindex="-1" aria-labelledby="add_socialWorkLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="add_socialWorkLabel">Agregar Obra Social:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="form-file" class="form-label">Logo:</label>
+                                <input class="form-control" type="file" id="form-file"> 
+                            </div>
+                            <div class="mb-3">
+                                <label for="socialWork-form" class="col-form-label">Obra Social (Requerido):</label>
+                                <textarea class="form-control" id="socialWork-form"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="plan-form" class="col-form-label">Plan:</label>
+                                <textarea class="form-control" id="plan-form"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="add_socialWorkForm">Agregar Obra Social</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Close Modal Add social work-->
             </div>
             <div class="tab-pane fade py-3" id="clinics-tab-pane" role="tabpanel" aria-labelledby="clinics-tab" tabindex="0">
                 <table id="table-clinics" class="table align-middle table-hover">
@@ -164,9 +300,56 @@
                     <tbody class="table-group-divider">
                     </tbody>
                 </table>
+                <!-- Open Modal Add Clinic -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_clinic">Agregar Clínica</button>
+
+                <div class="modal fade" id="add_clinic" tabindex="-1" aria-labelledby="add_clinicLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="add_clinicLabel">Agregar Clínica:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name-clinic" class="col-form-label">Clínica (Requerido):</label>
+                                <input type="text" class="form-control" id="name-clinic">
+                            </div>
+                            <div class="mb-3">
+                                <label for="schedule-clinic" class="col-form-label">Horario de atención:</label>
+                                <textarea class="form-control" id="schedule-clinic"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email-clinic" class="col-form-label">Email:</label>
+                                <textarea class="form-control" id="email-clinic"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone-clinic" class="col-form-label">Teléfono:</label>
+                                <textarea class="form-control" id="phone-clinic"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="campus-clinic" class="col-form-label">Sede:</label>
+                                <textarea class="form-control" id="campus-clinic"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="campus-clinic" class="col-form-label">Sede:</label>
+                                <textarea class="form-control" id="campus-clinic"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="add_clinicForm">Agregar Clinica</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Close Modal Add Clinic-->
             </div>
         </div>
     </section><!-- close tabs-->
+
 
     <footer class="py-0 m-auto container "> <!-- open footer -->
         <ul class="navbar-nav flex-row flex-wrap align-content-center pb-3">
@@ -339,8 +522,11 @@
                     });
                     </script>
 
+    <!-- js sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Js Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
     <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="js/admin_crud.js"></script>
 </body>
 </html>
