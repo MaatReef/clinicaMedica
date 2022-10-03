@@ -98,7 +98,7 @@
                     type="button" role="tab" aria-controls="clinics-tab-pane" aria-selected="false">Clínicas</button>
             </li>
         </ul>
-        <div class="tab-content py-3" id="adminTabContent">
+        <div class="tab-content py-3 overflow-auto" id="adminTabContent">
             <div class="tab-pane fade show active" id="doctors-tab-pane" role="tabpanel" aria-labelledby="doctors-tab" tabindex="0">
                 <table id="table-doctors" class="table align-middle table-hover">
                     <thead>
@@ -118,13 +118,13 @@
                 </table>
 
                 <!-- Open Modal Add doctor -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_Doctor">Agregar Doctor</button>
+                <button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#add_Doctor">AGREGAR DOCTOR</button>
 
                 <div class="modal fade" id="add_Doctor" tabindex="-1" aria-labelledby="add_doctorLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog rounded-3 border border-primary">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="add_doctorLabel">Agregar Doctor:</h1>
+                        <h1 class="modal-title fs-5" id="add_doctorLabel">AGREGAR DOCTOR:</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -160,15 +160,15 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="add_doctorForm">Agregar Doctor</button>
+                        <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary rounded-0" id="add_doctorForm">Agregar Doctor</button>
                     </div>
                     </div>
                 </div>
                 </div>
                 <!-- Close Modal Add doctor -->
             </div>
-            <div class="tab-pane fade py-3" id="users-tab-pane" role="tabpanel" aria-labelledby="users-tab" tabindex="0">
+            <div class="tab-pane fade py-3 overflow-auto" id="users-tab-pane" role="tabpanel" aria-labelledby="users-tab" tabindex="0">
                 <table id="table-users" class="table align-middle table-hover">
                     <thead>
                         <tr>
@@ -186,14 +186,13 @@
                     </tbody>
                 </table>
                 
-                <!-- Open Modal Add Patient -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_patient">Agregar Paciente</button>
+                <button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#add_patient">AGREGAR PACIENTE</button>
 
                 <div class="modal fade" id="add_patient" tabindex="-1" aria-labelledby="add_patientLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog rounded-3 border border-primary">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="add_patientLabel">Agregar Paciente:</h1>
+                        <h1 class="modal-title fs-5" id="add_patientLabel">AGREGAR PACIENTE:</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -229,15 +228,15 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="add_patientForm">Agregar Paciente</button>
+                        <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">CERRAR</button>
+                        <button type="button" class="btn btn-primary rounded-0" id="add_patientForm">AGREGAR PACIENTE</button>
                     </div>
                     </div>
                 </div>
                 </div>
                 <!-- Close Modal Add Pacient -->
             </div>
-            <div class="tab-pane fade py-3" id="health-tab-pane" role="tabpanel" aria-labelledby="health-tab" tabindex="0">
+            <div class="tab-pane fade py-3 overflow-auto" id="health-tab-pane" role="tabpanel" aria-labelledby="health-tab" tabindex="0">
                 <table id="table-health" class="table align-middle table-hover">
                     <thead>
                         <tr>
@@ -251,13 +250,13 @@
                     </tbody>
                 </table>
                 <!-- Open Modal Add social work -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_socialWork">Agregar Obra Social</button>
+                <button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#add_socialWork">AGREGAR OBRA SOCIAL</button>
 
                 <div class="modal fade" id="add_socialWork" tabindex="-1" aria-labelledby="add_socialWorkLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog rounded-3 border border-primary">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="add_socialWorkLabel">Agregar Obra Social:</h1>
+                        <h1 class="modal-title fs-5" id="add_socialWorkLabel">AGREGAR OBRA SOCIAL:</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -277,15 +276,15 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="add_socialWorkForm">Agregar Obra Social</button>
+                        <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">CERRAR</button>
+                        <button type="button" class="btn btn-primary rounded-0" id="add_socialWorkForm">AGREGAR OBRA</button>
                     </div>
                     </div>
                 </div>
                 </div>
                 <!-- Close Modal Add social work-->
             </div>
-            <div class="tab-pane fade py-3" id="clinics-tab-pane" role="tabpanel" aria-labelledby="clinics-tab" tabindex="0">
+            <div class="tab-pane fade py-3 overflow-auto" id="clinics-tab-pane" role="tabpanel" aria-labelledby="clinics-tab" tabindex="0">
                 <table id="table-clinics" class="table align-middle table-hover">
                     <thead>
                         <tr>
@@ -301,13 +300,13 @@
                     </tbody>
                 </table>
                 <!-- Open Modal Add Clinic -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_clinic">Agregar Clínica</button>
+                <button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#add_clinic">AGREGAR CLÍNICA</button>
 
                 <div class="modal fade" id="add_clinic" tabindex="-1" aria-labelledby="add_clinicLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog rounded-3 border border-primary">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="add_clinicLabel">Agregar Clínica:</h1>
+                        <h1 class="modal-title fs-5" id="add_clinicLabel">AGREGAR CLÍNICA:</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -339,8 +338,8 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="add_clinicForm">Agregar Clinica</button>
+                        <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">CERRAR</button>
+                        <button type="button" class="btn btn-primary rounded-0" id="add_clinicForm">AGREGAR CLÍNICA</button>
                     </div>
                     </div>
                 </div>

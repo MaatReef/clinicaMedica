@@ -27,7 +27,7 @@ add_doctor.addEventListener("click", function(){
   } else{
     swal({
       title: "Error",
-      text: "Completa todos los campos",
+      text: "Completa los campos requeridos",
       icon: "error",
       button: "Correcto",
     });
@@ -56,7 +56,7 @@ add_patient.addEventListener("click", function(){
   } else{
     swal({
       title: "Error",
-      text: "Completa todos los campos",
+      text: "Completa los campos requeridos",
       icon: "error",
       button: "Correcto",
     });
@@ -81,7 +81,7 @@ add_socialWork.addEventListener("click", function(){
   } else{
     swal({
       title: "Error",
-      text: "Completa todos los campos",
+      text: "Completa los campos requeridos",
       icon: "error",
       button: "Correcto",
     });
@@ -108,7 +108,7 @@ add_clinic.addEventListener("click", function(){
   } else{
     swal({
       title: "Error",
-      text: "Completa todos los campos",
+      text: "Completa los campos requeridos",
       icon: "error",
       button: "Correcto",
     });
