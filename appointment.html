@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Médica</title>
+    <title>Clínicas Médicas</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/fav/favicon-16x16.png">
@@ -18,8 +18,9 @@
     <header class="navbar navbar-expand-lg navbar-white bg-white bd-navbar sticky-top p-y5 m-auto container">
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
             <ul>
-                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav fs-3 fw-bold"><a class="links" href="index.html">CLINICAS X</a></li>
-                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav">Su salud, primero</li>
+                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav fs-3 fw-bold"><a class="links" href="index.html">CENTROS MÉDICOS
+                        CUDI</a></li>
+                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav">0800-555-555</li>
             </ul>
           <div class="d-flex">
             <button class="mb-2 navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
@@ -31,18 +32,11 @@
       
           <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
             <div class="offcanvas-header px-4 pb-0">
-              <h5 class="offcanvas-title text-black" id="bdNavbarOffcanvasLabel">CLINICAS X</h5>
+              <h5 class="offcanvas-title text-black" id="bdNavbarOffcanvasLabel">CENTROS MÉDICOS CUDI</h5>
               <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
             </div>
 
             <div class="offcanvas-body p-4 pt-0 p-lg-0">
-              <hr class="d-lg-none text-black-100">
-                <ul class="ms-auto align-content-center mt-2">
-                    <p class="col-10 col-lg-auto text-center mt-2">CENTRAL DE TURNOS</p>
-                    <p class="col-10 col-lg-auto text-center">0800-555-555</p>
-                </ul>
-              <hr class="d-lg-none text-black-100">
-      
               <ul class="navbar-nav flex-row flex-wrap ms-md-auto sm-col-4  align-content-center">
                     <li class="nav-item col-3 col-lg-auto mx-auto text-center">
                         <a class="nav-link py-2 px-0 px-lg-2" href="index.html" rel="noopener">
@@ -82,22 +76,29 @@
                 </div>
                 <div class="col-sm-8 col-xs-12">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Día del turno</span>
-                        <input id="appointment" type="text" class="form-control" placeholder="Fecha del turno" aria-label="appointment"
-                            aria-describedby="basic-appointment">
+                        <span class="input-group-text" for="day-form">Día del turno</span>
+                        <input type="text" id="appointment" class="form-control" placeholder="Fecha del turno" aria-label="appointment"
+                        aria-describedby="basic-appointment">
                     </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">Observaciones</span>
-                        <textarea class="form-control" aria-label="observaciones"></textarea>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Especialidad"
-                            aria-label="Especialidad">
-                        <button class="btn btn-outline-primary" type="button">Presencial</button>
-                        <button class="btn btn-outline-primary" type="button">Virtual</button>
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" for="obs-form">Observaciones</span>
+                            <textarea class="form-control" id="obs-form" aria-label="observaciones"></textarea>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" for="speciality-form">Especialidad</span>
+                            <input type="text" id="speciality-form" class="form-control" placeholder="Especialidad"
+                                aria-label="Especialidad">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" for="mode-form">Modalidad</span>
+                            <input type="text" id="mode-form" class="form-control" placeholder="Modalidad"
+                                aria-label="appointment" aria-describedby="basic-appointment">
+                        </div>
+                        <button type="button" class="btn btn-primary rounded-0" id="add_appointmentForm">RESERVAR TURNO</button>
+                    </form>
                     </div>
                 </div>
-            </div>
         </div>
     </section><!-- close appointment-->
 
@@ -106,7 +107,7 @@
             <table class="table table-borderless">
                 <thead>
                   <tr>
-                    <th scope="col" class="border-bottom border-primary"><a class="links" href="index.html">CLINICAS X</a></th>
+                    <th scope="col" class="border-bottom border-primary"><a class="links" href="index.html">CENTROS MÉDICOS CUDI</a></th>
                   </tr>
                 </thead>
             </table>
@@ -160,13 +161,46 @@
                 $('#appointment').val(value);
             }
             document.getElementById('pickadate').addEventListener('pickadate:change', onChange);
+
+            let add_appointment = document.getElementById("add_appointmentForm");
+
+            // Formulario de turnos
+            add_appointment?.addEventListener("click", function () {
+                // Validación sencilla
+                let day = document.getElementById("appointment").value;
+                let speciality = document.getElementById("speciality-form").value;
+                let mode = document.getElementById("mode-form").value;
+                let obs = document.getElementById("obs-form").value;
+
+                // Por ahora solo con uno de todos para futuros tests.
+                // if(day && speciality...){
+                if (day) {
+                    swal({
+                        title: "Turno confirmado",
+                        text: "No olvide tener a mano su documento de identidad, la credencial de su obra social y cargar sus estudios en el portal de salud",
+                        icon: "success",
+                        button: "Confirmar",
+                    }).then((result) => {
+                        if (result) {
+                            window.location = "portal.html"
+                        }
+                    });
+                } else {
+                    swal({
+                        title: "Error",
+                        text: "Completa los campos requeridos",
+                        icon: "error",
+                        button: "Confirmar",
+                    });
+                }
+            });
         });
     </script>
-
+    <!-- js sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Js Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
     <script src="js/bootstrap.bundle.min.js"></script> 
     <script src="https://unpkg.com/pickadate@5.0.0-alpha.3/builds/index.js"></script> 
-
 </body>
 </html>

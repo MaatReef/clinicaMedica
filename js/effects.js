@@ -53,7 +53,6 @@ window.addEventListener("scroll", function(){
 // Manejo de mensajes con SweetAlert, capturamos el botón, escuchamos el evento click y ejecutamos lo deseado.
 let btn_send = document.getElementById("send_message");
 
-
 btn_send.addEventListener("click", function(){  
   // Validación sencilla
   let name_send = document.getElementById("name_message").value;

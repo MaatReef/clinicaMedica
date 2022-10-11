@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Médica</title>
+    <title>Clínicas Médicas</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/fav/favicon-16x16.png">
@@ -18,8 +18,9 @@
     <header class="navbar navbar-expand-lg navbar-white bg-white border-bottom mb-4" id="topmenu"> 
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
             <ul>
-                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav fs-3 fw-bold"><a class="links" href="index.html">CLINICAS X</a></li>
-                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav">Su salud, primero</li>
+                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav fs-3 fw-bold"><a class="links" href="index.html">CENTROS MÉDICOS
+                        CUDI</a></li>
+                <li class="navbar-nav flex-row flex-wrap bd-navbar-nav">0800-555-555</li>
             </ul>
           <div class="d-flex">
             <button class="mb-2 navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
@@ -31,20 +32,11 @@
       
           <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
             <div class="offcanvas-header px-4 pb-0">
-              <h5 class="offcanvas-title text-black" id="bdNavbarOffcanvasLabel">CLINICAS X</h5>
+              <h5 class="offcanvas-title text-black" id="bdNavbarOffcanvasLabel">CENTROS MÉDICOS CUDI</h5>
               <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
             </div>
       
-            <div class="offcanvas-body p-4 pt-0 p-lg-0">
-              <hr class="d-lg-none text-black-100">
-                <ul class="ms-auto align-content-center mt-2">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="portal.html" rel="noopener">
-                        <p class="text-center">Central de turnos</p>
-                    </a>
-                    <p class="col-10 col-lg-auto text-center">0800-555-555</p>
-                </ul>
-              <hr class="d-lg-none text-black-100">
-      
+            <div class="offcanvas-body p-4 pt-0 p-lg-0">      
               <ul class="navbar-nav flex-row flex-wrap ms-md-auto sm-col-4  align-content-center">
                     <li class="nav-item col-3 col-lg-auto mx-auto text-center">
                         <a class="nav-link py-2 px-0 px-lg-2" href="admin.html" rel="noopener">
@@ -67,15 +59,44 @@
                         </a>
                     </li>
                     <li class="col-sm-6 col-lg-auto mx-auto px-2 mt-4 mt-md-0">
-                        <a class="" href="appointment.html" rel="noopener"> 
-                            <button type="button" class="btn btn-primary btn-lg rounded-0 fw-bold fs-6">TURNOS ONLINE</button>
-                        </a>
+                        <button type="button" class="btn btn-primary btn-lg rounded-0 fw-bold fs-6" 
+                            data-bs-toggle="modal" data-bs-target="#login">TURNOS ONLINE</button>
                     </li>
                 </ul>
             </div>
           </div>
         </nav>
     </header> <!-- close header + navbar -->
+
+    <!-- Open Modal -->
+    
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog rounded-3 border border-primary">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginLabel">Ingreso al Portal Personal de Salud</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username-form" class="col-form-label">Usuario:</label>
+                            <input class="form-control" id="username-form"></input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password-form" class="col-form-label">Contraseña:</label>
+                            <input class="form-control" id="password-form"></input>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary rounded-0" id="loginForm">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Close Modal-->
 
     <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="false">
         <div class="carousel-indicators">
@@ -95,35 +116,35 @@
                 <img src="assets/specialities/medical-speciality-14.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block slider-caption">
                     <h3>Refaccionamos el área de pediatría en la sede Abasto</h3>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <p>Conoce la amplia variedad de estudios que realizamos.</p>
                 </div>
             </div>
             <div class="carousel-item slider-item">
                 <img src="assets/specialities/medical-speciality-9.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block slider-caption">
                     <h3>Prevención COVID</h3>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <p>La manera mas fácil de obtener tu apto físico.</p>
                 </div>
             </div>
             <div class="carousel-item slider-item">
                 <img src="assets/specialities/medical-speciality-20.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block slider-caption">
                     <h3>Turnos a demanda para todas las especialidades</h3>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <p>Descubrí nuestras especialidades médicas.</p>
                 </div>
             </div>
             <div class="carousel-item slider-item" data-bs-interval="20000">
                 <img src="assets/specialities/medical-speciality-4.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block slider-caption">
                     <h3>Atención odontológica gratuita como forma de asistencia social</h3>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <p>Un estandar de calidad internacionalmente reconocido.</p>
                 </div>
             </div>
             <div class="carousel-item slider-item">
                 <img src="assets/specialities/medical-speciality-12.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block slider-caption">
                     <h3>Abren turnos para oftalmología en sede Microcentro</h3>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <p>Te invitamos a que nos conozcas.</p>
                 </div>
             </div>
         </div>
@@ -138,39 +159,85 @@
     </div>
 
     <div class="container align-content-center py-5 my-5">  <!-- open view of three section -->
-        <div class="row ">
-            <div class="col-lg-4 ">
+        <div class="row">
+            <div class="col-lg-4">
                 <img src="assets/clinics/clinic-2.jpg" class="card-img-top" alt="">
-            <h2 class="text-center mt-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-medical" viewBox="0 0 16 21">
-                    <path d="M8.5 4.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L7 6l-.549.317a.5.5 0 1 0 .5.866l.549-.317V7.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L9 6l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V4.5zM5.5 9a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
-                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
-                  </svg>
-                LABORATORIO</h2>
-            <p class="text-center">Resultados inmediatos,</p>
-            <p class="text-center">directo a tu Email en el Día.</p>
-            
+                <div class="d-flex  my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-file-medical" viewBox="0 0 25 25">
+                      <path d="M8.5 4.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L7 6l-.549.317a.5.5 0 1 0 .5.866l.549-.317V7.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L9 6l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V4.5zM5.5 9a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                      <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                    </svg>
+                    <h2>LABORATORIO</h2>
+                </div>
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
+                        viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <p class="mx-2">Dirección: Luis María Campos 751</p>
+                </div>
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+                        viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                    </svg>
+                    <p class="mx-2">Horario de atención: L a V de 14 hs a 19 hs</p>
+                </div>
             </div>
             <div class="col-lg-4">
                 <img src="assets/clinics/clinic-3.jpg" class="card-img-top" alt="">
-            <h2 class="text-center mt-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-hospital" viewBox="0 0 16 21">
-                    <path d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z"/>
-                    <path d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z"/>
-                  </svg>
-                  RAYOS</h2>
-            <p class="text-center">Turnos a demanda,</p>
-            <p class="text-center">en todas las Sedes.</p>
+                <div class="d-flex  my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hospital"
+                        viewBox="0 0 25 25">
+                        <path
+                            d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z" />
+                        <path
+                            d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z" />
+                    </svg>
+                    <h2>RAYOS</h2>
+                </div>
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
+                        viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <p class="mx-2">Dirección: Molina Arrotea 1250</p>
+                </div>
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+                        viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                    </svg>
+                    <p class="mx-2">Horario de atención: L a V de 10 hs a 20 hs</p>
+                </div>
             </div>
             <div class="col-lg-4">
                 <img src="assets/clinics/clinic-4.jpg" class="card-img-top" alt="">
-            <h2 class="text-center mt-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-heart-pulse" viewBox="0 0 16 21">
-                    <path fill-rule="evenodd" d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01L8 2.748ZM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5Zm8.252-6.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162l-1.874-4.686Z"/>
-                </svg>
-                 PREVENCION</h2>
-            <p class="text-center">Hacete el test CovID gratis,</p>
-            <p class="text-center">en la sede de tu elección.</p>
+                <div class="d-flex  my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-heart-pulse"
+                        viewBox="0 0 25 25">
+                        <path fill-rule="evenodd"
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01L8 2.748ZM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5Zm8.252-6.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162l-1.874-4.686Z" />
+                    </svg>
+                    <h2>PREVENCIÓN</h2>
+                </div>
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
+                        viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <p class="mx-2">Dirección: Carlos Besares 5244</p>
+                </div>
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+                        viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                    </svg>
+                    <p class="mx-2">Horario de atención: L a V de 9 hs a 21 hs</p>
+                </div>
             </div>
         </div>
     </div>  <!-- close view -->
@@ -237,7 +304,7 @@
             <table class="table table-borderless">
                 <thead>
                   <tr>
-                    <th scope="col" class="border-bottom border-primary"><a class="links" href="index.html">CLINICAS X</a></th>
+                    <th scope="col" class="border-bottom border-primary"><a class="links" href="index.html">CENTROS MÉDICOS CUDI</a></th>
                   </tr>
                 </thead>
             </table>
@@ -322,6 +389,36 @@
                 $('#table_staff').append(table_staff);
             });
         });
+
+        let login = document.getElementById("loginForm");
+
+        // Formulario login
+        login?.addEventListener("click", function () {
+            // Validación sencilla
+            let username = document.getElementById("username-form").value;
+            let password = document.getElementById("password-form").value;
+
+            // Por ahora solo con uno de todos para futuros tests.
+            // if(username && password){
+            if (username) {
+                swal({
+                    title: "Bienvenido",
+                    icon: 'success',
+                    button: 'Confirmar'
+                }).then((result) => {
+                    if (result) {
+                        window.location = "portal.html"
+                    }
+                    });
+                } else {
+                    swal({
+                        title: "Error",
+                        text: "Completa los campos requeridos",
+                        icon: "error",
+                        button: "Reintentar",
+                    });
+                }
+            });
     </script>
 
     <!-- js sweetalert -->

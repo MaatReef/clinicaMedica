@@ -5,7 +5,7 @@ let add_socialWork = document.getElementById("add_socialWorkForm");
 let add_clinic = document.getElementById("add_clinicForm");
 
 // Formulario del Doc
-add_doctor.addEventListener("click", function(){  
+add_doctor?.addEventListener("click", function(){  
   // Validación sencilla
   console.log("asa")
   let nameDoctor = document.getElementById("name-doctor").value;
@@ -35,7 +35,7 @@ add_doctor.addEventListener("click", function(){
 });
 
 // Formulario de los pacientes
-add_patient.addEventListener("click", function(){  
+add_patient?.addEventListener("click", function(){  
   // Validación sencilla
   let namePacient = document.getElementById("name-patient").value;
   let socialWorkPacient = document.getElementById("socialWork-patient").value;
@@ -64,7 +64,7 @@ add_patient.addEventListener("click", function(){
 });
 
 // Formulario de las obras sociales
-add_socialWork.addEventListener("click", function(){  
+add_socialWork?.addEventListener("click", function(){  
   // Validación sencilla
   let socialWork = document.getElementById("socialWork-form").value;
   let planForm = document.getElementById("plan-form").value;
@@ -89,7 +89,7 @@ add_socialWork.addEventListener("click", function(){
 });
 
 // Formulario de las obras sociales
-add_clinic.addEventListener("click", function(){  
+add_clinic?.addEventListener("click", function(){  
   let nameClinic = document.getElementById("name-clinic").value;
   let scheduleClinic = document.getElementById("schedule-clinic").value;
   let emailClinic = document.getElementById("email-clinic").value;
